@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Trang Web Responsive (RWD)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Container bao bọc toàn bộ trang web -->
+    <div class="wrapper">
+        
+        <!-- Header -->
+        <div class="header">
+            <h1>Header - Tiêu đề trang web</h1>
+        </div>
+
+        <!-- Thanh điều hướng Navigation -->
+        <div class="topnav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Dịch vụ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- Khu vực nội dung chính + sidebar -->
+        <div class="row">
+            <!-- Sidebar trái (Menu bên) -->
+            <div class="column side">
+                <h2>Cột trái (Sidebar)</h2>
+                <ul>
+                    <li><a href="#">Danh mục 1</a></li>
+                    <li><a href="#">Danh mục 2</a></li>
+                    <li><a href="#">Danh mục 3</a></li>
+                    <li><a href="#">Danh mục 4</a></li>
+                </ul>
+            </div>
+            
+            <!-- Content chính -->
+            <div class="column middle">
+                <h2>Nội dung chính (Main Content)</h2>
+                <p>Đây là khu vực hiển thị nội dung bài viết chính của trang web. Bố cục này sử dụng kĩ thuật <strong>Responsive Web Design (RWD)</strong> bằng CSS Flexbox và <code>@media</code> queries.</p>
+                <p>Kích thước của các cột sẽ tự động co giãn và sắp xếp lại tùy theo độ phân giải màn hình của thiết bị (Máy tính, Tablet, Điện thoại di động):</p>
+                <ul>
+                    <li><strong>Desktop (&gt; 768px):</strong> Hiển thị bố cục 3 cột song song (Cột trái - Nội dung chính - Cột phải).</li>
+                    <li><strong>Tablet & Mobile (&le; 768px):</strong> Tự động xếp chồng các cột thành 1 hàng dọc để dễ thao tác trên màn hình nhỏ.</li>
+                </ul>
+            </div>
+            
+            <!-- Sidebar phải -->
+            <div class="column side">
+                <h2>Cột phải (Aside)</h2>
+                <div class="card">
+                    <h3>Tin nổi bật</h3>
+                    <p>Mô tả ngắn tin tức nổi bật hoặc quảng cáo bên cột phải.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Footer - Bản quyền &copy; 2026 Trang Web Responsive</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
